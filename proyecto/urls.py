@@ -21,6 +21,6 @@ from app.views import *
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', 'app.views.home_page', name='home_page'),
-    url(r'^/appointment/$', 'app.views.appointment', name='makeAppointment'),
-    url(r'^/contact/$', 'app.views.contact', name='contact'),
+    url(r'^appointment/$', 'app.views.appointment', name='makeAppointment'),
+    url(r'^contact/$', 'app.views.contact', name='contact'),
 ]

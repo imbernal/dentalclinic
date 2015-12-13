@@ -3,7 +3,7 @@ $('#submitAppointment').click(function (e) {
     e.preventDefault();
 
 
-    var urlPost = $('#url').val();
+    var urlPost = '/appointment/';
     $.ajax({
         method: "POST",
         url: urlPost,
@@ -31,7 +31,7 @@ $('#contactSubmit').click(function (e) {
     e.preventDefault();
 
 
-    var urlPost = $('#contactUrl').val();
+    var urlPost = /contact/;
     $.ajax({
         method: "POST",
         url: urlPost,

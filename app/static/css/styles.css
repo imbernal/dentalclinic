@@ -55,7 +55,7 @@ a {
 }
 
 /*==================================
-  		 Header parts starts here 
+  		 Header parts starts here
   ==================================*/
 
 header {
@@ -186,11 +186,11 @@ header {
 /*/!*background:url(../images/icons/button-h.png) left top no-repeat;*!/*/
 /*}*/
 /*==================================
-   		 Header parts ends here 
+   		 Header parts ends here
   ==================================*/
 
 /*==================================
-   		 Banner parts ends here 
+   		 Banner parts ends here
   ==================================*/
 .relative {
     position: relative;
@@ -509,7 +509,7 @@ header {
 /*background:#fa6d1a url(../images/icons/but-ar.png) 90% center no-repeat;*/
 /*}*/
 /*==================================
-		 Banner parts ends here 
+		 Banner parts ends here
   ==================================*/
 /*==================================
    ----  service quick links here
@@ -624,7 +624,7 @@ header {
    		 Quick links ends here
   ==================================*/
 /*==================================
-   		 News update and our doctors here 
+   		 News update and our doctors here
   ==================================*/
 .second-section {
     width: 100%;
@@ -805,7 +805,7 @@ header {
   		News update and our doctors ends here
   ==================================*/
 /*==================================
-   		 Service Section starts here 
+   		 Service Section starts here
   ==================================*/
 .third-section {
     width: 100%;
@@ -888,10 +888,10 @@ header {
 }
 
 /*==================================
-   		Service section ends here 
+   		Service section ends here
   ==================================*/
 /*==================================
-  Our history and our Department starts here 
+  Our history and our Department starts here
   ==================================*/
 .repeter-section {
     background: #fff;
@@ -1018,10 +1018,10 @@ header {
 */
 
 /*==================================
-  Our history and our Department ends here 
+  Our history and our Department ends here
   ==================================*/
 /*==================================
-   		 footer parts starts here 
+   		 footer parts starts here
   ==================================*/
 
 .footer {
@@ -1486,7 +1486,7 @@ header {
 .map-cov {
     width: 100%;
     float: left;
-    height: 199px;
+    height: 251.1px;
     overflow: hidden;
 }
 
@@ -2120,7 +2120,7 @@ header {
 }
 
 /*======================
-	FOR CHECKBOX 
+	FOR CHECKBOX
  ======================*/
 
 .squaredOne, .squaredtwo, .squaredthree, .squaredfour {
