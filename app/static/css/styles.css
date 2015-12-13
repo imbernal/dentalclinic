@@ -1,31 +1,5 @@
 @charset "utf-8";
-/* 
-		=============================
-		-->     Table of CSS     <--
-		=============================
-		
-		
-		(1)  Global Styling - Common for Body, Anchor Tags, Form Elements and various Text Elements.
-		(2)  Header parts - Header Section
-		(3)  Main Navigation - Stying for Main Navigation.
-		(4)  Banner - Styling for Banner
-		(5)  service quick links - service Quick links contents
-		(6)  News update and our doctors - News section listing and Our doctors contents
-		(7)  Our history and our Department - Our History and department contents
-		(8)  Service section - Our service section contents here
-		(9)  Footer parts - it have a news letter and athoer links contents
-		
-		
-		=================================
-		-->     End of Table CSS     <--
-		=================================
-*/
 
-/* 
-		============================
-		-->   (1) Global Styling <--
-		============================
-*/
 
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, menu, nav, section, summary, time, mark, audio, video {
     margin: 0;
