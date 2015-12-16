@@ -29,20 +29,17 @@ def appointment(request):
 
 	send_mail('New appointment' , message , 'mainoffice@detanlprogroup.com' ,[ 'mainoffice@detanlprogroup.com'])
 
-	return render(request , 'home_page/a.html' )
 
 @csrf_exempt
 def contact(request):
 
-	name = request.POST['name']
-	phone = request.POST['phone']
-	email = request.POST['email']
-	comment = request.POST['comment']
+	name = request.POST['apname']
+	phone = request.POST['aptel']
+	email = request.POST['apemail']
+	comment = request.POST['apcomment']
 
 	message = "Someone want to contact with you. " + "Datos: " + "Name: " + name + ", Phone:" +phone + ", Email: "\
 	+ email + ", Comment: " + comment
 	send_mail('New Contact' , message , 'mainoffice@detanlprogroup.com' ,[ 'mainoffice@detanlprogroup.com'])
-
-	return render(request , 'home_page/a.html' )
 
 # Create your views here.

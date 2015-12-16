@@ -21,7 +21,7 @@ $('#formAppointment').validate({
 
         $.ajax({
             method: "POST",
-            url: '/appointment/',
+            url: 'appointment/',
             data: {
                 name: $('#name').val(),
                 email: $('#email').val(),
@@ -30,7 +30,7 @@ $('#formAppointment').validate({
                 hour: $('#clock').val()
             }
         })
-            .done(function () {
+            .done(function (e) {
                 $('#name').val("");
                 $('#email').val("");
                 $('#phone').val("");
@@ -41,60 +41,70 @@ $('#formAppointment').validate({
     }
 });
 
+//$('#formContact').validate({
+//    rules: {
+//        apname: {
+//            required: true
+//        },
+//        apemail: {
+//            required: true,
+//            email: true
+//        },
+//        aptel: {
+//            required: true
+//        },
+//        apcomment: {
+//            required: true
+//        }
+//    },
+//    submitHandler: function (form) {
+//        var urlPost = $('#contactUrl').val();
+//        $.ajax({
+//            method: "POST",
+//            url: urlPost,
+//            data: {
+//                apname: $('#apname').val(),
+//                apemail: $('#apemail').val(),
+//                aptel: $('#aptel').val(),
+//                apcomment: $('#apcomment').val()
+//            }
+//        })
+//            .done(function () {
+//                $('#apname').val("");
+//                $('#apemail').val("");
+//                $('#aptel').val("");
+//                $('#apcomment').val("");
+//            });
 //
-//$('#submitAppointment').click(function (e) {
+//    }
+//
+//});
+//
+//$('#contactSubmit').click(function (e) {
 //    //debugger;
 //    e.preventDefault();
 //
 //
-//    var urlPost = $('#url').val();
+//    var urlPost = $('#contactUrl').val();
 //    $.ajax({
 //        method: "POST",
 //        url: urlPost,
 //        data: {
-//            name: $('#name').val(),
-//            email: $('#email').val(),
-//            phone: $('#phone').val(),
-//            date: $('#date').val(),
-//            hour: $('#clock').val()
+//            name: $('#apname').val(),
+//            email: $('#apemail').val(),
+//            phone: $('#aptel').val(),
+//            comment: $('#apcomment').val()
 //        }
 //    })
 //        .done(function () {
-//                $('#name').val(""),
-//                $('#email').val(""),
-//                $('#phone').val(""),
-//                $('#date').val(""),
-//                $('#clock').val("")
+//            $('#apname').val("");
+//            $('#apemail').val("");
+//            $('#aptel').val("");
+//            $('#apcomment').val("");
 //        });
 //
 //
 //});
-
-$('#contactSubmit').click(function (e) {
-    //debugger;
-    e.preventDefault();
-
-
-    var urlPost = $('#contactUrl').val();
-    $.ajax({
-        method: "POST",
-        url: urlPost,
-        data: {
-            name: $('#apname').val(),
-            email: $('#apemail').val(),
-            phone: $('#aptel').val(),
-            comment: $('#apcomment').val()
-        }
-    })
-        .done(function () {
-            $('#apname').val("");
-            $('#apemail').val("");
-            $('#aptel').val("");
-            $('#apcomment').val("");
-        });
-
-
-});
 
 //var form = $('#formAppointment').click(function(e){
 //

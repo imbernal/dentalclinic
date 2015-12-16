@@ -7,8 +7,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="keywords"
-          content="dental,professional,profesional,diente,clinic,miami,group">
+    <meta name="keywords" content="dental,professional,profesional,diente,clinic,miami,group,root,extractions,white,fillings,porcelain,crowns,emergencies">
     <title>Dental Group</title>
     <link rel="stylesheet" href="/static/css/bootstrap.min.css">
     <link rel="stylesheet" href="/static/css/font-awesome.css">
@@ -441,7 +440,7 @@
 
 
                     </div>
-                    <div class="col-sm-4 about-img">
+                    <div class="col-xs-4 col-sm-4 about-img">
                         <div class="high-image"><img src="/static/img/logoAbout.png" alt="big-im"></div>
                     </div>
                 </div>
@@ -480,13 +479,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-5 contact">
-                        <form action="#" method="post">
+                        <form action="#" id="formContact" method="post">
                             {% csrf_token %}
                             <h2 class="title-grp"><span>send us</span>message</h2>
-                            <input type="text" placeholder="Name*" id="apname">
-                            <input type="text" placeholder="Email*" id="apemail">
-                            <input type="text" placeholder="Phone*" id="aptel">
-                            <textarea placeholder="Comment*" name="comment" id="apcomment"></textarea>
+                            <input type="text" placeholder="Name*" name="apname" id="apname">
+                            <input type="text" placeholder="Email*" name="apemail" id="apemail">
+                            <input type="text" placeholder="Phone*" name="aptel" id="aptel">
+                            <textarea placeholder="Comment*" name="apcomment" id="apcomment"></textarea>
                             <input type="hidden" id="contactUrl" value="{% url 'contact' %}">
 
                             <div id="ferror"></div>
