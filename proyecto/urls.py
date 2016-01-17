@@ -22,9 +22,7 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', 'app.views.home_page', name='home_page'),
     url(r'^appointment/$', 'app.views.appointment', name='makeAppointment'),
-<<<<<<< HEAD
+
     url(r'^contact/', 'app.views.contact', name='contact'),
-=======
-    url(r'^contact/$', 'app.views.contact', name='contact'),
->>>>>>> 61a4d4ca09dec373f40bb04a356dc68b7fa0cddf
+
 ]
