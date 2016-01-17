@@ -23,11 +23,11 @@ $('#formAppointment').validate({
             method: "POST",
             url: 'appointment/',
             data: {
-                name: $('#name').val(),
-                email: $('#email').val(),
-                phone: $('#phone').val(),
-                date: $('#date').val(),
-                hour: $('#clock').val()
+                name: $('#name').val(""),
+                email: $('#email').val(""),
+                phone: $('#phone').val(""),
+                date: $('#date').val(""),
+                hour: $('#clock').val("")
             }
         })
             .done(function (e) {
