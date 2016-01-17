@@ -7,9 +7,11 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="keywords" content="dental,professional,profesional,diente,clinic,miami,group,root,extractions,white,fillings,porcelain,crowns,emergencies">
     <title>Dental Group</title>
     <link rel="stylesheet" href="/static/css/bootstrap.min.css">
     <link rel="stylesheet" href="/static/css/font-awesome.css">
+
     <link rel="stylesheet" href="/static/css/styles.css">
     <link rel="stylesheet" type="text/css" href="/static/css/bootstrap-clockpicker.min.css">
     <link rel="stylesheet" type="text/css" href="/static/css/datepicker.css">
@@ -24,16 +26,18 @@
 <div class="outer-sync var2">
     <header>
         <div class="container">
-            <div class="row">
-                <div class="col-sm-12 top-strip">
-                    <h2 class="delt-bord">Email :<a href="#">mainoffice@dentalprogroup.com</a></h2>
 
-                    <h2>Call :<a href="#"> +1 (786) 801-1354</a></h2>
+            <div class="row logo-nav">
+                <div class="hidden-xs hidden-sm top-strip">
+                    <h2 class="delt-bord">Email :<a href="#">mainoffice@detanlprogroup.com</a></h2>
+
+                    <h2>Call :<a href="#"> (786)801-1354</a></h2>
+
+
                 </div>
                 <div class="col-sm-12 bottom-strip p-both">
-                    <div class="col-sm-3 logo">
-                        <a href="#">LOGO</a>
-                        <!--<img src="/static/img/logo-var2.png" alt="medical theams">-->
+                    <div class="col-xs-2 logo">
+                        <img src="/static/img/logo.png" class="img-responsive" alt="medical theams">
                     </div>
                     <div class="col-sm-9 navigation">
                         <nav class="navbar navbar-default">
@@ -432,9 +436,31 @@
 
         </div>
 
-        <div class="repeter-section p82-topbot" id="gallery">
+        <div class="repeter-section p82-topbot" id="paying">
             <div class="container">
                 <div class="row">
+                    <div class="col-sm-8 about">
+                        <h2 class="title-grp"><span>about</span>Us</h2>
+
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley
+                            of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries,
+                            but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                            popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                            passages,
+                            and more recently with desktop publishing software like Aldus PageMaker including versions
+                            of
+                            Lorem Ipsum.</p>
+                        <br>
+
+
+                    </div>
+                    <div class="col-xs-4 col-sm-4 about-img">
+                        <div class="high-image"><img src="/static/img/logoAbout.png" alt="big-im"></div>
+
                     <div class="col-sm-12">
                         <h2 class="title-grp">
                             <span>Financing</span>
@@ -451,6 +477,7 @@
                         		<a href="http://www.carecredit.com/"><img src="/static/img/CareCreditLogo.jpg"></a>
                         	</div>
                         </div>
+
                     </div>
                 </div>
                 <!-- /.row -->
@@ -489,13 +516,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-5 contact">
-                        <form action="#" method="post">
+                        <form action="#" id="formContact" method="post">
                             {% csrf_token %}
                             <h2 class="title-grp"><span>send us</span>message</h2>
-                            <input type="text" placeholder="Name*" id="apname">
-                            <input type="text" placeholder="Email*" id="apemail">
-                            <input type="text" placeholder="Phone*" id="aptel">
-                            <textarea placeholder="Comment*" name="comment" id="apcomment"></textarea>
+                            <input type="text" placeholder="Name*" name="apname" id="apname">
+                            <input type="text" placeholder="Email*" name="apemail" id="apemail">
+                            <input type="text" placeholder="Phone*" name="aptel" id="aptel">
+                            <textarea placeholder="Comment*" name="apcomment" id="apcomment"></textarea>
                             <input type="hidden" id="contactUrl" value="{% url 'contact' %}">
 
                             <div id="ferror"></div>
@@ -509,7 +536,11 @@
                         <h2 class="title-grp"><span>our</span>location</h2>
 
                         <div class="map-cov">
+
+                            <!--<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script><div style="overflow:hidden;height:500px;width:600px;"><div id="gmap_canvas" style="height:450px;width:100%;"></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style><a class="google-map-code" href="http://www.themecircle.net" id="get-map-data">great themes</a></div><script type="text/javascript"> function init_map(){var myOptions = {zoom:19,center:new google.maps.LatLng(25.7442929,-80.3519804),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(25.7442929, -80.3519804)});infowindow = new google.maps.InfoWindow({content:"<b>Dental Professional Group</b><br/>2740 SW 97 Ave. Suite 109<br/>33165 Miami" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>-->
+
                             <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script><div style="overflow:hidden;height:600px;width:100%;"><div id="gmap_canvas" style="height:450px;width:100%;"></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style><a class="google-map-code" href="http://www.themecircle.net" id="get-map-data">great themes</a></div><script type="text/javascript"> function init_map(){var myOptions = {zoom:19,center:new google.maps.LatLng(25.7442929,-80.3519804),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(25.7442929, -80.3519804)});infowindow = new google.maps.InfoWindow({content:"<b>Dental Professional Group</b><br/>2740 SW 97 Ave. Suite 109<br/>33165 Miami" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+
                         </div>
                         <div class="col-lg-5 col-md-6 ids">
                             <h2 class="location">Dental Proffesional Group
@@ -531,7 +562,7 @@
 
         </div>
 
-
+</div>
     </div>
     <div class="copyrights">
         <p>Dental Professional Group © 2015 | All Rights Reserved</p>
@@ -546,7 +577,7 @@
 <script src="/static/js/plugins.js"></script>
 
 <script src="/static/js/main.js"></script>
-<script src="/static/js/appointmentAjax.js"></script>
+
 <script src="/static/js/jquery.validate.js"></script>
 <script src="/static/js/components-pickers.js"></script>
 <script src="/static/js/app.js"></script>
@@ -558,6 +589,7 @@
 <!--<script type="text/javascript" src="/static/js/jquery-ui.js"></script>-->
 <script type="text/javascript" src="/static/js/jquery-clockpicker.min.js"></script>
 <script type="text/javascript" src="/static/js/owl.carousel.js"></script>
+<script src="/static/js/appointmentAjax.js"></script>
 <script type="text/javascript">
 
     $('#clock').clockpicker({
@@ -570,11 +602,11 @@
         autoclose: true
     });
 
-    $('#submitAppointment').click(function (e) {
-        e.preventDefault();
-
-        $('#myModal').modal('show');
-    });
+//    $('#submitAppointment').click(function (e) {
+//        e.preventDefault();
+//
+////        $('#myModal').modal('show');
+//    });
 
     $("#owl-demo").owlCarousel({
 
