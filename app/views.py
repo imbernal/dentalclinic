@@ -24,10 +24,10 @@ def appointment(request):
 
 	appointmentNew.save()
 
-	message = "You have new appointment. " + "Details : " + "Name: " + name + ", Phone: "+ phone + ", Email: " + email \
-			  + ", Date: " + date + ", Hour: " + hour
+	message = "You have a new appointment. \n\r" + "Details : \n\r" + "Name: " + name + "\n\r Phone: "+ phone + "\n\r Email: " + email \
+			  + "\n\r Date: " + date + "\n\r Hour: " + hour
 
-	send_mail('New appointment' , message , 'mainoffice@detanlprogroup.com' ,[ 'mainoffice@detanlprogroup.com'])
+	send_mail('New appointment' , message , 'mainoffice@dentalprogroup.com' ,[ 'mainoffice@dentalprogroup.com', 'imbernal9203@gmail.com'])
 
 
 @csrf_exempt
@@ -38,8 +38,8 @@ def contact(request):
 	email = request.POST['apemail']
 	comment = request.POST['apcomment']
 
-	message = "Someone want to contact with you. " + "Datos: " + "Name: " + name + ", Phone:" +phone + ", Email: "\
-	+ email + ", Comment: " + comment
-	send_mail('New Contact' , message , 'mainoffice@detanlprogroup.com' ,[ 'mainoffice@detanlprogroup.com'])
+	message = "Contact details: \n\r" + "Name: " + name + "\n\r Phone:" +phone + "\n\r Email: "\
+	+ email + "\n\r Comment: " + comment
+	send_mail('New Contact' , message , 'mainoffice@dentalprogroup.com' ,[ 'mainoffice@dentalprogroup.com', 'imbernal9203@gmail.com'])
 
 # Create your views here.

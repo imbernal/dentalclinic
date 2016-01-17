@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $('#formAppointment').validate({
     rules: {
         name: {
@@ -15,6 +16,23 @@ $('#formAppointment').validate({
         },
         hour: {
             required: true
+=======
+$('#submitAppointment').click(function (e) {
+    //debugger;
+    e.preventDefault();
+
+
+    var urlPost = '/appointment/';
+    $.ajax({
+        method: "POST",
+        url: urlPost,
+        data: {
+            name: $('#name').val(),
+            email: $('#email').val(),
+            phone: $('#phone').val(),
+            date: $('#date').val(),
+            hour: $('#clock').val()
+>>>>>>> 61a4d4ca09dec373f40bb04a356dc68b7fa0cddf
         }
     },
     submitHandler: function (form) {
@@ -41,6 +59,7 @@ $('#formAppointment').validate({
     }
 });
 
+<<<<<<< HEAD
 //$('#formContact').validate({
 //    rules: {
 //        apname: {
@@ -105,6 +124,33 @@ $('#formAppointment').validate({
 //
 //
 //});
+=======
+$('#contactSubmit').click(function (e) {
+    //debugger;
+    e.preventDefault();
+
+
+    var urlPost = /contact/;
+    $.ajax({
+        method: "POST",
+        url: urlPost,
+        data: {
+            name: $('#apname').val(),
+            email: $('#apemail').val(),
+            phone: $('#aptel').val(),
+            comment: $('#apcomment').val()
+        }
+    })
+        .done(function () {
+                $('#apname').val("");
+                $('#apemail').val("");
+                $('#aptel').val("");
+                $('#apcomment').val("");
+        });
+
+
+});
+>>>>>>> 61a4d4ca09dec373f40bb04a356dc68b7fa0cddf
 
 //var form = $('#formAppointment').click(function(e){
 //

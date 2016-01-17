@@ -1,48 +1,4 @@
- "use strict";	
-$(document).ready(function(){
-
-  $('.slider1').bxSlider({
-    slideWidth: 200,
-    minSlides: 2,
-    maxSlides: 2,
-    slideMargin: 2,
-	auto:true,
-	pager:false,
-	nextText: '',
- 	prevText: ''
-  });
-  
-  $('.disast').bxSlider({
-	mode: 'vertical',
-    minSlides: 3,
-    maxSlides: 3,
-    slideMargin: 0,
-	auto:true,
-	pager:false,
-	nextText: '',
- 	prevText: ''
-  });
-   $('.sliding').bxSlider({
-	/*mode: 'vertical',*/
-    minSlides: 2,
-    maxSlides: 2,
-    slideMargin: 0,
-	auto:true,
-	pager:false,
-	nextText: '',
- 	prevText: ''
-  });
-   $('.happy').bxSlider({
-    /* slideWidth: 200, */
-    minSlides: 2,
-    maxSlides: 2,
-    slideMargin: 2,
-	auto:true,
-	pager:true,
-	nextText: '',
- 	prevText: ''
-  });
-});
+ "use strict";
 
 $(document).ready(function () {
     $("#panel1").slideDown("slow");
