@@ -37,9 +37,6 @@ $('#formAppointment').validate({
                 $('#phone').val("");
                 $('#date').val("");
                 $('#clock').val("");
-                function(r){
-                    $('#myModal').modal('show');
-                }
             });
     }
 });

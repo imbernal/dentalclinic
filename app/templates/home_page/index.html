@@ -92,13 +92,14 @@
                     <h2 class="title-grp">
                         <span>share Us</span>
                     </h2>
+                    {% load social_share %}
 
-                    <a href="#" class="btn btn-fb btn-block btn-lg"><span
-                            class="icon-social ion-social-facebook"></span>Facebook</a>
-                    <a href="#" class="btn btn-tw btn-block btn-lg"><span
-                            class="icon-social ion-social-twitter"></span>Twitter</a>
-                    <a href="#" class="btn btn-gp btn-block btn-lg"><span
-                            class="icon-social ion-social-googleplus"></span>Google+</a>
+
+
+                    <div class="facebook btn btn-fb btn-block btn-lg">{% post_to_facebook object_or_url "Share us on Facebook!" %}</div>
+                    <div class="btn btn-tw btn-block btn-lg">{% post_to_twitter object_or_url "Share us on Twitter!" %}</div>
+                    <div class="btn btn-gp btn-block btn-lg">{% post_to_gplus object_or_url "Share us on Google+!" %}</div>
+
 
 
                 </div>
@@ -492,6 +493,9 @@
                             Gallery
                         </h2>
 
+
+
+
                         <div id="owl-demo">
                             <div class="item"><img src="/static/img/gallery/owl1.jpg" alt="Owl Image"></div>
                             <div class="item"><img src="/static/img/gallery/owl2.jpg" alt="Owl Image"></div>
@@ -586,7 +590,7 @@
 <!--<script type="text/javascript" src="/static/js/jquery-ui.js"></script>-->
 <script type="text/javascript" src="/static/js/jquery-clockpicker.min.js"></script>
 <script type="text/javascript" src="/static/js/owl.carousel.js"></script>
-<script src="/static/js/appointmentAjax.js"></script>
+<!--<script src="/static/js/appointmentAjax.js"></script>-->
 <script type="text/javascript">
 
     $('#clock').clockpicker({
@@ -599,11 +603,11 @@
         autoclose: true
     });
 
-    <!--$('#submitAppointment').click(function (e) {-->
-        <!--e.preventDefault();-->
+    $('#submitAppointment').click(function (e) {
+        e.preventDefault();
 
-        <!--$('#myModal').modal('show');-->
-    <!--});-->
+        $('#myModal').modal('show');
+    });
 
     $("#owl-demo").owlCarousel({
 
