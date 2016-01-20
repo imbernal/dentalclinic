@@ -17,6 +17,7 @@ body {
     padding: 30px;
 }
 
+
 img {
     border: 0;
     -ms-interpolation-mode: bicubic;
@@ -72,6 +73,8 @@ header {
     border-right: 1px solid rgb(85.9%, 92.2%, 96.1%);
     padding: 17px 15px 17px 0;
 }
+
+
 
 .top-strip h2 a {
     color: #484d58;
