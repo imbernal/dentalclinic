@@ -22,7 +22,7 @@ def appointment(request):
 	appointmentNew.date = date
 	appointmentNew.hour = hour
 
-	appointmentNew.save()
+	# appointmentNew.save()
 
 	message = "You have a new appointment. \n\r" + "Details : \n\r" + "Name: " + name + "\n\r Phone: "+ phone + "\n\r Email: " + email \
 			  + "\n\r Date: " + date + "\n\r Hour: " + hour

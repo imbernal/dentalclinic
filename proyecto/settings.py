@@ -72,16 +72,16 @@ TEMPLATES = [
 WSGI_APPLICATION = 'proyecto.wsgi.application'
 
 
-EMAIL_HOST = "smtp.mandrillapp.com"
-EMAIL_PORT = "587"
-EMAIL_HOST_USER = "imbernal9203@gmail.com"
-EMAIL_HOST_PASSWORD = "b_Aio-LIxDdptnjOtSVVSw"
-
-# EMAIL_USE_TLS = True
-# EMAIL_HOST = "smtp.gmail.com"
-# EMAIL_PORT = 587
+# EMAIL_HOST = "smtp.mandrillapp.com"
+# EMAIL_PORT = "587"
 # EMAIL_HOST_USER = "imbernal9203@gmail.com"
-# EMAIL_HOST_PASSWORD = "imbernal123"
+# EMAIL_HOST_PASSWORD = "b_Aio-LIxDdptnjOtSVVSw"
+
+EMAIL_USE_TLS = True
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_PORT = 587
+EMAIL_HOST_USER = "imbernal9203@gmail.com"
+EMAIL_HOST_PASSWORD = "imbernal123"
 
 
 
