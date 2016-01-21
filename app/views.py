@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
 from django.core.mail import send_mail
-from .models import *
+# from .models import *
 
 def home_page(request):
 	return render(request , 'home_page/index.html')
@@ -15,12 +15,12 @@ def appointment(request):
 	date = request.POST['date']
 	hour = request.POST['hour']
 
-	appointmentNew = Appointment()
-	appointmentNew.name = name
-	appointmentNew.email = email
-	appointmentNew.phone = phone
-	appointmentNew.date = date
-	appointmentNew.hour = hour
+	# appointmentNew = Appointment()
+	# appointmentNew.name = name
+	# appointmentNew.email = email
+	# appointmentNew.phone = phone
+	# appointmentNew.date = date
+	# appointmentNew.hour = hour
 
 	# appointmentNew.save()
 
