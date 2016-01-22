@@ -29,6 +29,7 @@ def appointment(request):
 
 	send_mail('New appointment' , message , 'mainoffice@dentalprogroup.com' ,[ 'mainoffice@dentalprogroup.com', 'imbernal9203@gmail.com'])
 
+	return render(request , 'home_page/index.html')
 
 @csrf_exempt
 def contact(request):
