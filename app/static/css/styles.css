@@ -346,6 +346,8 @@ header {
     min-height: 266px;
 }
 
+
+
 .h24 {
     font-size: 15px;
     font-family: "Raleway", sans-serif;
@@ -1320,6 +1322,19 @@ header {
     padding: 14px 18px 5px 0;
     float: left;
 }
+
+.facebook-this a{
+    color: white;
+}
+
+.tweet-this a{
+    color: white;
+}
+
+.gplus-this a{
+    color: white;
+}
+
 
 /*.face-d {*/
 /*background:url(../images/icons/face.png) left top no-repeat;*/
